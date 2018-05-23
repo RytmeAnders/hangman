@@ -8,9 +8,11 @@
         <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
+        <div id="welcome"><!--Welcome text-->
+            <h1>Welcome to Hangman!</h1>
+        </div>
         <div id="container">
-            <div id="header"> <!--Header text-->
-                <h1>Welcome to Hangman!</h1>
+            <div id="header">
                 <p>
                     Collectively you have <span id="lives">4</span> lives left.
                     <br>
@@ -48,7 +50,7 @@
             </div>
         </div>
         
-        <div id="container"> <!--Display players-->
+        <div id="container3"> <!--Display players-->
             <p> <!--Display current player-->
                 <span id="currentPlayer">PLAYER 0</span>'s turn.
             </p>
@@ -59,7 +61,7 @@
             </p>
         </div>
         
-        <div id="container"> <!--The hangman graphics-->
+        <div id="container2"> <!--The hangman graphics-->
             <canvas id="hangman" width="300px" height="300px"></canvas>
         </div>
         
