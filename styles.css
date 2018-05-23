@@ -1,0 +1,31 @@
+
+#container {
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #dddddd;
+    margin: 10% auto;
+    text-align: center;
+}
+
+#letters a{
+    color: black;
+    background-color: darkgray;
+    border-radius: 0px;
+    padding: 5px;
+    cursor: pointer
+}
+
+#letters a:hover{
+    color: yellow;
+}
+
+#letters a.correct{
+    color: green;
+    font-weight: bold;
+}
+
+#letters a.wrong{
+    color: red;
+    text-decoration: line-through;
+}
