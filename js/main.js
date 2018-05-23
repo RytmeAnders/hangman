@@ -85,22 +85,61 @@ Main.Hang = function(lives){
     switch(lives){
         case 5:
             ctx.beginPath(); //head
-            ctx.arc(150, 100, 20, 0, 2*Math.PI);
-            ctx.stroke();
+                ctx.arc(150, 100, 20, 0, 2*Math.PI);
+                ctx.stroke();
             ctx.beginPath(); //left eye
-            ctx.arc(143, 95, 3.5, 0, 2*Math.PI);
-            ctx.stroke();
+                ctx.arc(143, 95, 3.5, 0, 2*Math.PI);
+                ctx.stroke();
             ctx.beginPath(); //right eye
-            ctx.arc(157, 95, 3.5, 0, 2*Math.PI);
-            ctx.stroke();
+                ctx.arc(157, 95, 3.5, 0, 2*Math.PI);
+                ctx.stroke();
             ctx.beginPath(); //mouth
-            ctx.arc(150, 103, 9, 0, Math.PI);
-            ctx.stroke();
-            break
+                ctx.arc(150, 103, 9, 0, Math.PI);
+                ctx.stroke();
+            break;
+        case 4:
+            ctx.beginPath(); //body
+                ctx.moveTo(150,120);
+                ctx.lineTo(150,190);
+                ctx.stroke();
+            break;
+        case 3:
+            ctx.fillStyle = "white";
+            ctx.fillRect(138, 102, 24, 12); //cover mouth
+            ctx.beginPath(); //straight mouth
+                ctx.moveTo(140,108);
+                ctx.lineTo(160,108);
+                ctx.stroke();
+            ctx.beginPath(); //right arm
+                ctx.moveTo(150,135);
+                ctx.lineTo(180,160);
+                ctx.stroke();
+            break;
+        case 2:
+            ctx.beginPath(); //left arm
+                ctx.moveTo(150,135);
+                ctx.lineTo(120,160);
+                ctx.stroke();
+            break;
+        case 1:
+            ctx.fillRect(138, 102, 24, 12); //cover mouth
+            ctx.beginPath(); //sad mouth
+                ctx.arc(150, 112, 9, 0, Math.PI, true);
+                ctx.stroke();
+            ctx.beginPath(); //right leg
+                ctx.moveTo(149,188);
+                ctx.lineTo(180,230);
+                ctx.stroke();
+            ctx.beginPath(); //left leg
+                ctx.moveTo(151,188);
+                ctx.lineTo(120,230);
+                ctx.stroke();
+            break;
     }
 }
 
 Main.DisplayCurrentPlayer = function(){
+    document.getElementById("lives").innerHTML = Main.Lives; //Initialize correct amount of lives
     if(Main.turn){
         document.getElementById("currentPlayer").innerHTML = "PLAYER 1"
     }
