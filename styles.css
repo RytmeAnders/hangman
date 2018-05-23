@@ -1,16 +1,49 @@
-
-#container {
-    width: 50%;
+#welcome {
+    position: fixed;
+    left: 10%;
+    top: 5%;
+    width: 40%;
     border-radius: 5px;
     padding: 10px;
-    background-color: #dddddd;
-    margin: 10% auto;
+    background-color: #CE7663;
+    text-align: center;
+}
+
+#container {
+    position: absolute;
+    left: 10%;
+    top: 21%;
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #CE7663;
+    text-align: center;
+}
+
+#container2 {
+    position: absolute;
+    left: 60%;
+    top: 27.7%;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+#container3 {
+    position: absolute;
+    left: 10%;
+    top: 46%;
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #CE7663;
     text-align: center;
 }
 
 #letters a{
     color: black;
-    background-color: darkgray;
+    background-color: white;
     border-radius: 0px;
     padding: 5px;
     cursor: pointer
